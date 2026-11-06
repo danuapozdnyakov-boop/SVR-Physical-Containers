@@ -1,0 +1,9 @@
+build/
+out/
+.vs/
+__pycache__/
+*.pyc
+*.obj
+*.pdb
+*.exp
+*.exe

@@ -1,0 +1,1458 @@
+[
+  {
+    "model": "_byoh\\furniture\\byohupperendtable02.nif",
+    "physical_model": "svrphysicalcontainersc23\\_byoh\\furniture\\byohupperendtable02.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_22",
+        "anchor": "SVC_Anchor_22",
+        "animated_node": "EndTable01Drawer02",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "slide",
+        "limit": 0.1428874287996937,
+        "mass": 6.0
+      },
+      {
+        "leaf": "SVC_Physical_26",
+        "anchor": "SVC_Anchor_26",
+        "animated_node": "EndTable01Drawer03",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "slide",
+        "limit": 0.11633861284836945,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "actors\\dlc02\\spider_poison\\characterassets\\expspidereggsalbino02.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "architecture\\riften\\clutter\\rtcoffin01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "architecture\\whiterun\\wrclutter\\wrburialurn01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "architecture\\whiterun\\wrclutter\\wrcoffin01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "architecture\\whiterun\\wrinteriors\\wrwallshelf01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "architecture\\winterhold\\winterholdbookcase01.nif",
+    "physical_model": "svrphysicalcontainersc23\\architecture\\winterhold\\winterholdbookcase01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_13",
+        "anchor": "SVC_Anchor_13",
+        "animated_node": "LeftDoor01",
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 6.0
+      },
+      {
+        "leaf": "SVC_Physical_21",
+        "anchor": "SVC_Anchor_21",
+        "animated_node": "RightDoor01",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\barrel01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\barrel01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_12",
+        "anchor": "SVC_Anchor_12",
+        "animated_node": "SVC_BarrelLid",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "perpendicular": [
+          0,
+          1,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 4.0
+      }
+    ],
+    "split_geometry": [
+      {
+        "source_shape": 7,
+        "lid_shape": 11,
+        "interior_shape": 15,
+        "interior_cap_height": 75.84,
+        "triangles": 98,
+        "pivot": [
+          0.0,
+          -24.0,
+          79.0
+        ]
+      }
+    ]
+  },
+  {
+    "model": "clutter\\beehive\\beehive01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\bodies\\draugrbodylaying01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\bones\\bloodyhand.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\burntcorpses\\corpse01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\burntcorpses\\corpse02.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\burntcorpses\\corpse03.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\burntcorpses\\corpse04.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\burntcorpses\\corpse05.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\common\\commoncoffin01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\common\\cupboard01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\common\\cupboard01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_18",
+        "anchor": "SVC_Anchor_18",
+        "animated_node": "Cupboard01Drawer",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "slide",
+        "limit": 0.14288731979471767,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\common\\dresser01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\common\\dresser01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_18",
+        "anchor": "SVC_Anchor_18",
+        "animated_node": "Dresser01Drawer",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "slide",
+        "limit": 0.14288731979471767,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\common\\endtable01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\common\\endtable01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_18",
+        "anchor": "SVC_Anchor_18",
+        "animated_node": "EndTable01Drawer",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "slide",
+        "limit": 0.14288731979471767,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\common\\strongbox01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\common\\strongbox01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_20",
+        "anchor": "SVC_Anchor_20",
+        "animated_node": "Top",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "perpendicular": [
+          0,
+          1,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 4.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\common\\wardrobe01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\common\\wardrobe01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_22",
+        "anchor": "SVC_Anchor_22",
+        "animated_node": "Wardrobe01DoorL",
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 6.0
+      },
+      {
+        "leaf": "SVC_Physical_26",
+        "anchor": "SVC_Anchor_26",
+        "animated_node": "Wardrobe01DoorR",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\containers\\chest01\\chest01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\containers\\chest01\\chest01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_17",
+        "anchor": "SVC_Anchor_17",
+        "animated_node": "Lid",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "perpendicular": [
+          0,
+          1,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 4.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\containers\\dwesoulgemcontainer01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\containers\\dwesoulgemcontainer01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_93",
+        "anchor": "SVC_Anchor_93",
+        "animated_node": "Lid02",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "perpendicular": [
+          0,
+          1,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 4.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\containers\\miscpouch.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\containers\\miscsack02large.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\containers\\miscsack02largeflat.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\containers\\miscsack02small.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\containers\\miscsack02smallflat.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\containers\\miscsacklarge.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\containers\\miscsacklargeflat01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\containers\\miscsacklargeflat02.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\containers\\miscsacklargeflat03.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\containers\\miscsacksmall.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\containers\\safeandlock01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\containers\\safeandlock01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_21",
+        "anchor": "SVC_Anchor_21",
+        "animated_node": "Object01",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\containers\\satchel.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\deadmammoth\\deadmammoth.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\deadsoldiers\\desecratedimperial.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\deadsoldiers\\desecratedstormcloak.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\dwemer\\dwechest01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\dwemer\\dwecontainer01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\dwemer\\dwecontainer01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_38",
+        "anchor": "SVC_Anchor_38",
+        "animated_node": "Top",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "perpendicular": [
+          0,
+          1,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 4.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\dwemer\\dwecontainter02.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\dwemer\\dwecontainter02.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_38",
+        "anchor": "SVC_Anchor_38",
+        "animated_node": "Lid02",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "perpendicular": [
+          0,
+          1,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 4.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\dwemer\\dwedresser01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\dwemer\\dwedresser01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_20",
+        "anchor": "SVC_Anchor_20",
+        "animated_node": "DoorLeft",
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 6.0
+      },
+      {
+        "leaf": "SVC_Physical_27",
+        "anchor": "SVC_Anchor_27",
+        "animated_node": "DoorRight",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\falmer\\falmercontainer.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\falmer\\falmercontainer02.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\festus\\festusdead.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\giant\\mammothcontainer01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\ingredients\\wispcrystal01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\ruins\\ruins_largechest.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\ruins\\ruins_largechest.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_20",
+        "anchor": "SVC_Anchor_20",
+        "animated_node": "RuinsChest_Top",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "perpendicular": [
+          0,
+          1,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 4.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\ruins\\ruins_smallchest.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\ruins\\ruins_smallchest.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_20",
+        "anchor": "SVC_Anchor_20",
+        "animated_node": "RuinsSmallChestTop",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "perpendicular": [
+          0,
+          1,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 4.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\ruins\\ruinscanopicjar01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\ruins\\ruinscanopicjar01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_23",
+        "anchor": "SVC_Anchor_23",
+        "animated_node": "RuinsCanopicJarHead",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "perpendicular": [
+          0,
+          1,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 4.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\ruins\\ruinscanopicjar02.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\ruins\\ruinscanopicjar02.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_23",
+        "anchor": "SVC_Anchor_23",
+        "animated_node": "RuinsCanopicJarHead02",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "perpendicular": [
+          0,
+          1,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 4.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\ruins\\ruinsdeaddraugr01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\ruins\\ruinsdeaddraugr02.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\ruins\\ruinsdeaddraugr03.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\ruins\\ruinsdeaddraugr04.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\ruins\\ruinsdeaddraugr05.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\ruins\\ruinsdeaddraugr06.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\ruins\\ruinsdeaddraugrsit.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\ruins\\ruinsdeaddraugrwrapped01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\ruins\\ruinsdeaddraugrwrapped02.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\ruins\\ruinslargeurnnostand01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\ruins\\ruinslargeurnnostand01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_13",
+        "anchor": "SVC_Anchor_13",
+        "animated_node": "Ruins_LargeUrnTop01",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\ruins\\ruinslargeurnwithstand01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\ruins\\ruinslargeurnwithstand01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_13",
+        "anchor": "SVC_Anchor_13",
+        "animated_node": "Ruins_LargeUrnTop",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\ruins\\ruinsspidersac05.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\sack01.nif",
+    "error": "[Errno 2] No such file or directory: 'physical-containers\\\\vanilla-models\\\\clutter\\\\sack01.nif'"
+  },
+  {
+    "model": "clutter\\sburialurn01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\sovngarde\\sovbarrel01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\sovngarde\\sovbarrel01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_15",
+        "anchor": "SVC_Anchor_15",
+        "animated_node": "SVC_BarrelLid",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "perpendicular": [
+          0,
+          1,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 4.0
+      }
+    ],
+    "split_geometry": [
+      {
+        "source_shape": 10,
+        "lid_shape": 14,
+        "interior_shape": 18,
+        "interior_cap_height": 75.84,
+        "triangles": 98,
+        "pivot": [
+          0.0,
+          -24.0,
+          79.0
+        ]
+      }
+    ]
+  },
+  {
+    "model": "clutter\\tgbarrel01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\tgbarrel01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_16",
+        "anchor": "SVC_Anchor_16",
+        "animated_node": "SVC_BarrelLid",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "perpendicular": [
+          0,
+          1,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 4.0
+      }
+    ],
+    "split_geometry": [
+      {
+        "source_shape": 11,
+        "lid_shape": 15,
+        "interior_shape": 19,
+        "interior_cap_height": 75.84,
+        "triangles": 98,
+        "pivot": [
+          0.0,
+          -24.0,
+          79.0
+        ]
+      }
+    ]
+  },
+  {
+    "model": "clutter\\upperclass\\upperchest01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\upperclass\\upperchest01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_23",
+        "anchor": "SVC_Anchor_23",
+        "animated_node": "Lid",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "perpendicular": [
+          0,
+          1,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 4.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\upperclass\\uppercupboard01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\upperclass\\uppercupboard01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_18",
+        "anchor": "SVC_Anchor_18",
+        "animated_node": "Cupboard01Drawer01",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "slide",
+        "limit": 0.14288731979471767,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\upperclass\\upperdresser01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\upperclass\\upperdresser01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_18",
+        "anchor": "SVC_Anchor_18",
+        "animated_node": "Dresser01Drawer01",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "slide",
+        "limit": 0.14288731979471767,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\upperclass\\upperendtable01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\upperclass\\upperendtable01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_18",
+        "anchor": "SVC_Anchor_18",
+        "animated_node": "EndTable01Drawer01",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "slide",
+        "limit": 0.14288731979471767,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\upperclass\\upperendtable02.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\upperclass\\upperendtable02.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_22",
+        "anchor": "SVC_Anchor_22",
+        "animated_node": "EndTable01Drawer02",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "slide",
+        "limit": 0.1428874287996937,
+        "mass": 6.0
+      },
+      {
+        "leaf": "SVC_Physical_26",
+        "anchor": "SVC_Anchor_26",
+        "animated_node": "EndTable01Drawer03",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "slide",
+        "limit": 0.11633861284836945,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\upperclass\\upperwardrobe01.nif",
+    "physical_model": "svrphysicalcontainersc23\\clutter\\upperclass\\upperwardrobe01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_22",
+        "anchor": "SVC_Anchor_22",
+        "animated_node": "Wardrobe01DoorL01",
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 6.0
+      },
+      {
+        "leaf": "SVC_Physical_26",
+        "anchor": "SVC_Anchor_26",
+        "animated_node": "Wardrobe01DoorR02",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "clutter\\windhelm\\whcoffin01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "clutter\\woodfires\\spitpotclosed01.nif",
+    "error": "Hanging cooking pot: original activation and suspension retained"
+  },
+  {
+    "model": "clutter\\woodfires\\spitpotclosed02.nif",
+    "error": "[Errno 2] No such file or directory: 'physical-containers\\\\vanilla-models\\\\clutter\\\\woodfires\\\\spitpotclosed02.nif'"
+  },
+  {
+    "model": "clutter\\woodfires\\spitpotclosedloose01.nif",
+    "error": "Hanging cooking pot: original activation and suspension retained"
+  },
+  {
+    "model": "critters\\bee\\critterbeehive.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "critters\\bee\\critterbeehivevacant.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "critters\\fchawk\\fchawkgo.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "dlc01\\clutter\\dlc01snowelfchest.nif",
+    "physical_model": "svrphysicalcontainersc23\\dlc01\\clutter\\dlc01snowelfchest.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_26",
+        "anchor": "SVC_Anchor_26",
+        "animated_node": "SnowElfChestTop",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "perpendicular": [
+          0,
+          1,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 4.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "dlc01\\critters\\dlc1skullhawkgo.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "dlc01\\soulcairn\\sc_chest.nif",
+    "physical_model": "svrphysicalcontainersc23\\dlc01\\soulcairn\\sc_chest.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_43",
+        "anchor": "SVC_Anchor_43",
+        "animated_node": "scChestTop",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "dlc01\\soulcairn\\sc_chest01.nif",
+    "physical_model": "svrphysicalcontainersc23\\dlc01\\soulcairn\\sc_chest01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_30",
+        "anchor": "SVC_Anchor_30",
+        "animated_node": "scChestTop",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "dlc01\\soulcairn\\sc_chest02.nif",
+    "physical_model": "svrphysicalcontainersc23\\dlc01\\soulcairn\\sc_chest02.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_43",
+        "anchor": "SVC_Anchor_43",
+        "animated_node": "scChestTop02",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "dlc02\\architecture\\riekling\\dlc2rieklingtent01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "dlc02\\clutter\\dlc2darkelfurn01.nif",
+    "physical_model": "svrphysicalcontainersc23\\dlc02\\clutter\\dlc2darkelfurn01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_19",
+        "anchor": "SVC_Anchor_19",
+        "animated_node": "Ruins_LargeUrnTop01",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "dlc02\\clutter\\expspidercraftingchest.nif",
+    "physical_model": "svrphysicalcontainersc23\\dlc02\\clutter\\expspidercraftingchest.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_46",
+        "anchor": "SVC_Anchor_46",
+        "animated_node": "door",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "dlc02\\dungeons\\apocrypha\\animated\\apourn\\apourn01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "dlc02\\dungeons\\apocrypha\\animated\\apourn\\apourn02.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "dungeons\\dwemer\\clutter\\mrkcryptcoffin01container.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "dungeons\\dwemer\\clutter\\mrkcryptcoffin02container.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "effects\\ashpileghostblack.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "effects\\ashpileghostdark01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "effects\\fxspiderwebkitdinner.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "effects\\fxspiderwebkitdinnerhumangnd.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "effects\\fxspiderwebkitskeeverdinner.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "furniture\\noble\\noblechest01.nif",
+    "physical_model": "svrphysicalcontainersc23\\furniture\\noble\\noblechest01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_22",
+        "anchor": "SVC_Anchor_22",
+        "animated_node": "Lid01",
+        "axis": [
+          -1,
+          0,
+          0
+        ],
+        "perpendicular": [
+          0,
+          1,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 4.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "furniture\\noble\\noblechestdrawers01.nif",
+    "physical_model": "svrphysicalcontainersc23\\furniture\\noble\\noblechestdrawers01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_19",
+        "anchor": "SVC_Anchor_19",
+        "animated_node": "DoorR03",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "furniture\\noble\\noblechestdrawers02.nif",
+    "physical_model": "svrphysicalcontainersc23\\furniture\\noble\\noblechestdrawers02.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_19",
+        "anchor": "SVC_Anchor_19",
+        "animated_node": "DoorR02",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "furniture\\noble\\noblenighttable01.nif",
+    "physical_model": "svrphysicalcontainersc23\\furniture\\noble\\noblenighttable01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_19",
+        "anchor": "SVC_Anchor_19",
+        "animated_node": "DoorR04",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "furniture\\noble\\noblewardrobe01.nif",
+    "physical_model": "svrphysicalcontainersc23\\furniture\\noble\\noblewardrobe01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_22",
+        "anchor": "SVC_Anchor_22",
+        "animated_node": "DoorR01",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "hinge",
+        "limit": 1.4,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "furniture\\noble\\scoffin.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "furniture\\noble\\scoffinpoor.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "furniture\\orcfurniture\\orcdresser01.nif",
+    "physical_model": "svrphysicalcontainersc23\\furniture\\orcfurniture\\orcdresser01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_18",
+        "anchor": "SVC_Anchor_18",
+        "animated_node": "Drawer01",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "slide",
+        "limit": 0.14288731979471767,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "furniture\\orcfurniture\\orcendtable01.nif",
+    "physical_model": "svrphysicalcontainersc23\\furniture\\orcfurniture\\orcendtable01.nif",
+    "leaves": [
+      {
+        "leaf": "SVC_Physical_18",
+        "anchor": "SVC_Anchor_18",
+        "animated_node": "Drawer01",
+        "axis": [
+          0,
+          -1,
+          0
+        ],
+        "perpendicular": [
+          1,
+          0,
+          0
+        ],
+        "mechanism": "slide",
+        "limit": 0.14288731979471767,
+        "mass": 6.0
+      }
+    ],
+    "split_geometry": []
+  },
+  {
+    "model": "landscape\\rocks\\rockl01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "landscape\\rocks\\rockm02.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "landscape\\trees\\treeaspenstump01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "landscape\\trees\\treepineforeststump01.nif",
+    "error": "No independently hinged lid/door"
+  },
+  {
+    "model": "markers\\misc\\invisiblecollision01.nif",
+    "error": "No independently hinged lid/door"
+  }
+]

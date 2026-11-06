@@ -1,0 +1,289 @@
+[
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\_byoh\\furniture\\byohupperendtable02.nif",
+    "sha256": "8e7b2511865507047a841f6e52123eccee01f0fb14debfcb29a5c07c923d6063",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 19,
+    "asset_changed_since_c27": true
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\architecture\\winterhold\\winterholdbookcase01.nif",
+    "sha256": "26548cbfaf873b8f06b0f1fa29ad3de22838d86ddb61e7d5d19e82f4d45f1957",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 17,
+    "asset_changed_since_c27": true
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\barrel01.nif",
+    "sha256": "54f27b192231b1e9a809c670fd7e5b46c97c01b930d94428bf0a32fa53e27727",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 12,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\common\\cupboard01.nif",
+    "sha256": "9e89f0886756027d648cab4dcfe12b00ca06eae96d318e97810f601f9e4d30c3",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 12,
+    "asset_changed_since_c27": true
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\common\\dresser01.nif",
+    "sha256": "129c74cfa1f91b7d6add59b3a713b47fcdaa1b60f0fdb8667039d286ec962785",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 12,
+    "asset_changed_since_c27": true
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\common\\endtable01.nif",
+    "sha256": "4abb3fe18ae7037a78594ec6aaccaa6b817f9d0c0e59f5dec578d1f9e202dd51",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 12,
+    "asset_changed_since_c27": true
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\common\\strongbox01.nif",
+    "sha256": "f882431cbf97f276382ce02cf6eba116e3d5c64921c6ea9c5c4b78251aefed1c",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 10,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\common\\wardrobe01.nif",
+    "sha256": "04c50cf9af497967fed2ffffe85c9719d1e9d7a640649b8626584fc01a7c0d89",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 19,
+    "asset_changed_since_c27": true
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\containers\\chest01\\chest01.nif",
+    "sha256": "5068e259e2387f57d0a1b73f710aeaad55e7c6be35040d07fa426be41f49653b",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 10,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\containers\\dwesoulgemcontainer01.nif",
+    "sha256": "b095e88fe63d21e5630c0cbd08b4e1bd9a1e248271dcfd2ed564089d69fa5634",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 10,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\containers\\safeandlock01.nif",
+    "sha256": "9e80415357823442c651480d2538e253481de3bf10fbf5114bd9a142a1732a68",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 10,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\dwemer\\dwecontainer01.nif",
+    "sha256": "f03cc85c58ca9ee7bbed514f69693abc5c9618e4f7c3d193b377a5e207dcc25f",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 10,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\dwemer\\dwecontainter02.nif",
+    "sha256": "00c95e8f95706342ef7f3b34e3d4a4cf35f52c56a9809feb28e245b40a69f6db",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 10,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\dwemer\\dwedresser01.nif",
+    "sha256": "b9e0f8be227f7c975e43d2d0a2abc8bf48690227e2051cfd26e72e095bae7549",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 19,
+    "asset_changed_since_c27": true
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\ruins\\ruins_largechest.nif",
+    "sha256": "b28f47ea7d34bd748b6446c58c8df4bfc0ce8bb4798c540cfb61068a0d5f1c20",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 10,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\ruins\\ruins_smallchest.nif",
+    "sha256": "9e7b30ee89f0744580e95637ed258befd269552936f3a9b3bc64afb2a9d668c1",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 10,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\ruins\\ruinscanopicjar01.nif",
+    "sha256": "0c33aadcfc693577416d9befa377d9be2a64eef2c7d82d565b2b2fc52acd70cc",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 10,
+    "asset_changed_since_c27": true
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\ruins\\ruinscanopicjar02.nif",
+    "sha256": "0c4776765880a1b9222b0b8a5e93796c203f938effcd3e5ec4e7080df35ec4f6",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 10,
+    "asset_changed_since_c27": true
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\ruins\\ruinslargeurnnostand01.nif",
+    "sha256": "588fe6d5326ca5ce55081d5e11590fed8df4786986d94b46dee7156ba9c599c2",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 10,
+    "asset_changed_since_c27": true
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\ruins\\ruinslargeurnwithstand01.nif",
+    "sha256": "1841ef7a50ccfea99127ec3cfd5a30637ff3cb8299b702eeb99c2b6cbdbdb452",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 10,
+    "asset_changed_since_c27": true
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\sovngarde\\sovbarrel01.nif",
+    "sha256": "813f43015080b42b68283d25abc57fd2afacfb58079b268282e1892ba0a775d2",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 12,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\tgbarrel01.nif",
+    "sha256": "8b91d4dbbf7f8968d5e84317bf29a70183308315bfe28831f3b343e92da2e91a",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 12,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\upperclass\\upperchest01.nif",
+    "sha256": "5f6d371cea76b6c649f73124c78ec642435085fc8effc22ea0b57c8adf63562d",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 14,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\upperclass\\uppercupboard01.nif",
+    "sha256": "e85677a991470aced56d7602bf53398422306a9dcbed73c37046bdfa12be6fd5",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 12,
+    "asset_changed_since_c27": true
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\upperclass\\upperdresser01.nif",
+    "sha256": "1df32af71e84b8afee09cec3b0a397e636838bc2e1c3230aede941c01c0b2ac0",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 12,
+    "asset_changed_since_c27": true
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\upperclass\\upperendtable01.nif",
+    "sha256": "ae3fbd4a802f0c11a3d5aab72a9afd537bf38b4a2e79f6132916a829421cecfa",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 12,
+    "asset_changed_since_c27": true
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\upperclass\\upperendtable02.nif",
+    "sha256": "0ff1150fc30687886b4e30a3b9bdc912b53b1fc53aa58ae075800a93dc8ad1cd",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 19,
+    "asset_changed_since_c27": true
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\clutter\\upperclass\\upperwardrobe01.nif",
+    "sha256": "3bc09ce5c66512859481b2a33b776c0a28911cf87232720a76aa6767026d7e62",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 19,
+    "asset_changed_since_c27": true
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\dlc01\\clutter\\dlc01snowelfchest.nif",
+    "sha256": "e7c331351fac6321629d9e8d64d331968d0f9e9b690149b1bb9dd17bc614805d",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 10,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\dlc01\\soulcairn\\sc_chest.nif",
+    "sha256": "9fd6201414c9f7bd92ed07b242cc801cd4476c8bbd0ac5e6059e12b0e33e0ad8",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 10,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\dlc01\\soulcairn\\sc_chest01.nif",
+    "sha256": "167bd889b9ec7e3e4c1615214b3aa484d33acd49c19e529faa17810dafa41e9c",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 10,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\dlc01\\soulcairn\\sc_chest02.nif",
+    "sha256": "017b0088f77c4e47d3563cd39711809b78b27a1bde39ac8f2a7f1fdd6db756bf",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 10,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\dlc02\\clutter\\dlc2darkelfurn01.nif",
+    "sha256": "68cf272b7fa4ff0f85e543c29a19eb1132c38a1c21768988b65c515d911b3434",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 10,
+    "asset_changed_since_c27": true
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\dlc02\\clutter\\expspidercraftingchest.nif",
+    "sha256": "7a301a78b7cd0fdfe15bfd870ac76915c76f866c1a30f57ac4b76c13329deced",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 10,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\furniture\\noble\\noblechest01.nif",
+    "sha256": "682be5bd197395b74809a80e74293824a1b9e34347f65ee33858d534aba30e6b",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 14,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\furniture\\noble\\noblechestdrawers01.nif",
+    "sha256": "c5f98ca3d7c224f75080baf681303bbf5612be251037ebd595a0934766adb8a6",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 14,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\furniture\\noble\\noblechestdrawers02.nif",
+    "sha256": "fa5cc4ed6c5236c8d06fb5a0dcfed9d83734d60623e2894475e43f63a1b10d8c",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 14,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\furniture\\noble\\noblenighttable01.nif",
+    "sha256": "89b5117f8ff371038a4183ae707ac5c70d53d06315a6e4f2ce1af7e90bff67f3",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 14,
+    "asset_changed_since_c27": false
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\furniture\\noble\\noblewardrobe01.nif",
+    "sha256": "1e30742bf6fa3ea7779fe9d0bf084603cf0f9e27a4778563b95eb3d97748d3a5",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 14,
+    "asset_changed_since_c27": true
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\furniture\\orcfurniture\\orcdresser01.nif",
+    "sha256": "58408e1ca5c85fd77c44b83b9c4f8353385a308475b7bf5bdd688b01bdd7951a",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 12,
+    "asset_changed_since_c27": true
+  },
+  {
+    "file": "meshes\\svrphysicalcontainersc23\\furniture\\orcfurniture\\orcendtable01.nif",
+    "sha256": "206d9aae1bb4247c5ed8f27b4654a4919d7094e109eee6519a8c016eb4679a7b",
+    "roundtrip": true,
+    "tested_physics_blocks_unchanged": 12,
+    "asset_changed_since_c27": true
+  }
+]

@@ -1,0 +1,10 @@
+Credits and notices
+Plugin developed with OpenAI Codex from the author's design and VR gameplay feedback.
+CommonLibSSE-NG contributors: GPL-3.0-or-later with Modding and Linking exceptions.
+HIGGS interface adapted from adamhynek/higgs (GPL-3.0); runtime HIGGS is not bundled.
+Dependency notices for fmt, spdlog, hde64, OpenVR, DirectXTK, DirectXMath and Xbyak
+are retained in the matching source archive. Plugin code: GPL-3.0-or-later subject
+to incorporated upstream terms. Bethesda asset rights remain separate: meshes
+derive from Skyrim assets for use with Skyrim, not standalone original art.
+No permission is granted to distribute original game archives or port Bethesda
+assets to unrelated games. AI-assisted code was used.
