@@ -1,6 +1,10 @@
-# SVRPhysicalContainers 0.2.10 Beta — source
+# SVRPhysicalContainers 0.2.11 Beta — source
 
-Source matching the 0.2.10 Beta Nexus release. This repository is for code review and development; it is not an installable mod.
+Source matching the 0.2.11 Beta runtime archive. This repository is for code review and development; it is not an installable mod.
+
+## Changes in 0.2.11
+- Show inventory earlier when opening hinged parts or drawers.
+- Start lockpicking through an intentional HIGGS grab or normal activation.
 
 ## Layout
 - `SVRPhysicalContainers/`: plugin source, model profiles, supporting headers and policy/math tests.

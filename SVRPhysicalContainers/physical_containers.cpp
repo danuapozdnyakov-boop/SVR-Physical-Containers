@@ -99,7 +99,8 @@ struct Door {
 static std::vector<Door> doors;
 static std::unordered_set<RE::FormID> supported;
 static std::mutex stateMutex;
-static std::vector<RE::ObjectRefHandle> queuedActivation;
+struct ActivationRequest { RE::ObjectRefHandle handle; bool lockpick; };
+static std::vector<ActivationRequest> queuedActivation;
 static std::atomic_uint menuSuspended=0;
 static void menuState(unsigned bit,bool opening){if(opening)menuSuspended.fetch_or(bit);else menuSuspended.fetch_and(~bit);}
 static RE::ObjectRefHandle lastInteraction;
@@ -174,9 +175,9 @@ static void collect(RE::NiAVObject* root,RE::NiAVObject* n,std::vector<Leaf>& le
  }
  if(auto node=n->AsNode())for(auto& child:node->GetChildren())collect(root,child.get(),leaves,model,depth+1);
 }
-static void queue(Door& d){
+static void queue(Door& d,bool lockpick=false){
  if(d.activated || d.cooldown>0)return;
- queuedActivation.push_back(d.handle);d.activated=true;d.cooldown=3.f;
+ queuedActivation.push_back({d.handle,lockpick});d.activated=true;d.cooldown=3.f;
 }
 static bool handNear(RE::bhkRigidBody* wrapper){
  auto api=HiggsAPI::g_higgs;if(!api)return false;
@@ -198,7 +199,7 @@ static void physics(void* w){
  for(auto& d:doors){
   auto ref=d.handle.get();if(!ref || !ref->loadedData || ref->loadedData->data3D.get()!=d.root)continue;
   bool held=api->GetGrabbedObject(true)==ref.get() || api->GetGrabbedObject(false)==ref.get();
-  d.cooldown=(std::max)(0.f,d.cooldown-dt);bool touchedAny=false,allClosed=true;
+  d.cooldown=(std::max)(0.f,d.cooldown-dt);bool allClosed=true;
   for(auto& l:d.leaves){
    auto leaf=l.body->GetRigidBody(),anchor=l.anchor->GetRigidBody();
    if(!l.profile || !leaf || !anchor || leaf->world!=world->GetWorld1() || anchor->world!=leaf->world)continue;
@@ -233,8 +234,7 @@ static void physics(void* w){
      auto q=quaternion(rotate(anchor,{1,0,0}),rotate(anchor,{0,1,0}),rotate(anchor,{0,0,1}));
      l.body->SetPositionAndRotation(pos,q);leaf->SetLinearVelocity(packed({0,0,0}));leaf->SetAngularVelocity(packed({0,0,0}));
     }
-    bool touched=partHeld || handNear(l.body);touchedAny|=touched;allClosed&=l.latch.latched;
-    if(d.locked && touched)queue(d);
+    allClosed&=l.latch.latched;
     if(!d.locked && !l.latch.latched && partHeld && distance>.12f && l.angle<=.12f)queue(d);
     l.angle=distance;
     continue;
@@ -253,9 +253,9 @@ static void physics(void* w){
     speed=closeSnap?0.f:CloseAssistSpeed(limited,speed,partHeld,d.locked,true);
     if((limited<=0 && speed<0)||(limited>=l.profile->limit && speed>0))speed=0;
     leaf->SetLinearVelocity(packed(scale(axis,speed)));leaf->SetAngularVelocity(packed({0,0,0}));
-    bool touched=held || handNear(l.body);touchedAny|=touched;allClosed&=ClosedEnoughToRearm(limited,true);
-    bool opening=OpeningTriggersInventory(l.angle,limited,speed,(std::min)(.10f,.35f*l.profile->limit));l.angle=limited;
-    if((d.locked && touched)||(!d.locked && touched && opening))queue(d);
+    bool touched=partHeld || handNear(l.body);allClosed&=ClosedEnoughToRearm(limited,true);
+    bool opening=OpeningTriggersInventory(l.angle,limited,speed,DrawerInventoryThreshold(l.profile->limit));l.angle=limited;
+    if(!d.locked && touched && opening)queue(d);
     continue;
    }
    auto current=rotate(leaf,{p[0],p[1],p[2]});current=unit(add(current,scale(axis,-dot(axis,current))));
@@ -282,19 +282,18 @@ static void physics(void* w){
    auto angularError=add(angular,scale(read(leaf->motion.angularVelocity),-1));auto linearError=add(linear,scale(read(leaf->motion.linearVelocity),-1));
    if(dot(angularError,angularError)>1e-8f)leaf->SetAngularVelocity(packed(angular));
    if(dot(linearError,linearError)>1e-8f)leaf->SetLinearVelocity(packed(linear));
-   bool opening=OpeningTriggersInventory(l.angle,angle,omega,.5235988f);l.angle=angle;bool touched=held || handNear(l.body);touchedAny|=touched;allClosed&=ClosedEnoughToRearm(angle,false);
-   if(d.locked && touched)queue(d);
+   bool opening=OpeningTriggersInventory(l.angle,angle,omega,HingedInventoryThreshold);l.angle=angle;bool touched=partHeld || handNear(l.body);allClosed&=ClosedEnoughToRearm(angle,false);
    if(!d.locked && touched && opening)queue(d);
   }
   // An open container remains consumed even if the hand leaves. Rearm after closing;
-  // locked containers still allow another lockpick attempt after withdrawing the hand.
-  if(d.cooldown<=0 && (d.locked?!touchedAny:allClosed))d.activated=false;
+  // Rearm lockpicking after release so only a new grab can try again.
+  if(d.cooldown<=0 && (d.locked?!held:allClosed))d.activated=false;
  }
  phase.store("idle after physics");
 }
 static void grabbed(bool,RE::TESObjectREFR* ref){
  if(!ref)return;std::lock_guard guard(stateMutex);
- for(auto& d:doors)if(d.handle==ref->GetHandle() && d.locked){queue(d);break;}
+ for(auto& d:doors)if(d.handle==ref->GetHandle() && d.locked){queue(d,true);break;}
 }
 // HIGGS can move a held part after the pre-physics callback. A closed latch
 // must remain shut until a NEW grab; keep bodies dynamic so HIGGS can select them.
@@ -369,10 +368,10 @@ static void update(){
  if(!menuSuspended.load())if(auto api=HiggsAPI::g_higgs)for(int h=0;h<2;++h){
   auto& saved=menuGrip[h];if(!saved.retry)continue;--saved.retry;
   auto ref=saved.handle.get();auto held=api->GetGrabbedObject(h==0);
-  if(!ref || !ref->Get3D() || held){saved.retry=0;continue;}
+  if(!ref || !ref->Get3D() || ref->IsLocked() || ref->IsActivationBlocked() || held){saved.retry=0;continue;}
   if(api->CanGrabObject(h==0))api->GrabObject(ref.get(),h==0);
  }
- std::vector<RE::ObjectRefHandle> activate;
+ std::vector<ActivationRequest> activate;
  {
   std::lock_guard guard(stateMutex);activate.swap(queuedActivation);
   for(auto& d:doors)if(auto ref=d.handle.get();ref && ref->Get3D()==d.root){
@@ -380,14 +379,19 @@ static void update(){
   }
  }
  // Engine activation and lockpick/teleport actions run outside the physics world lock.
- for(auto& h:activate)if(auto ref=h.get()){
+ for(const auto& request:activate)if(auto ref=request.handle.get()){
   if(menuSuspended.load())break;
-  if(!ref->Get3D())continue;
+  if(!ref->Get3D() || ref->IsLocked()!=request.lockpick)continue;
+  if(request.lockpick){
+   auto api=HiggsAPI::g_higgs;
+   if(!api || (api->GetGrabbedObject(true)!=ref.get() && api->GetGrabbedObject(false)!=ref.get()))continue;
+  }
+  const auto& h=request.handle;
   lastInteraction=h;
   phase.store("native container activation");
   bool success=ref->ActivateRef(player,0,nullptr,1,false);
   phase.store("after native container activation");
-  logFile<<"activate ref="<<std::hex<<ref->GetFormID()<<std::dec<<" locked="<<ref->IsLocked()<<" accepted="<<success<<'\n';logFile.flush();
+  logFile<<"activate ref="<<std::hex<<ref->GetFormID()<<std::dec<<" reason="<<(request.lockpick?"grab-lockpick":"opening-motion")<<" locked="<<ref->IsLocked()<<" accepted="<<success<<'\n';logFile.flush();
  }
  static unsigned frame=0;if(++frame%6)return;
  std::vector<Door> discovered;
@@ -427,11 +431,11 @@ static void install(){
  }
  if(auto ui=RE::UI::GetSingleton())ui->AddEventSink<RE::MenuOpenCloseEvent>(&menuEvents);
  api->AddPrePhysicsStepCallback(physics);api->AddPostVrikPostHiggsCallback(update);api->AddPostVrikPostHiggsCallback(holdLatches);api->AddGrabbedCallback(grabbed);
- logFile<<"C2.7 gravity/rim-snap lids registered; patched base containers="<<supported.size()<<" models="<<std::size(MODELS)<<"; ordered anchors and shapes; CLUTTER leaves; scoped lockpick visibility; cell tracking reset\n";logFile.flush();
+ logFile<<"C2.11 early inventory and grab-only lockpicking; gravity/rim-snap lids registered; patched base containers="<<supported.size()<<" models="<<std::size(MODELS)<<"; ordered anchors and shapes; CLUTTER leaves; scoped lockpick visibility; cell tracking reset\n";logFile.flush();
  phase.store("waiting for save load / native model loading");
 }
 SKSE_EXPORT constinit SKSE::PluginDeclaration SKSEPlugin_Version({
- .Version=REL::Version{0,2,10,0},.Name="SVRPhysicalContainers"sv,.Author="Local physical containers"sv,
+ .Version=REL::Version{0,2,11,0},.Name="SVRPhysicalContainers"sv,.Author="Local physical containers"sv,
  .StructCompatibility=SKSE::StructCompatibility::Dependent,
  .RuntimeCompatibility={REL::Version{1,4,15,0},REL::Version{1,4,15,1}},.MinimumSKSEVersion=REL::Version{0,0,0,0}
 });

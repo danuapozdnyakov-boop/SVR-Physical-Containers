@@ -1,13 +1,16 @@
 {
-  "version": "0.2.10",
-  "dll_sha256": "ca36b6f4dac0104bd7036871746ff6b5948e6c1f519589671a839037b4ce9014",
+  "version": "0.2.11",
+  "archive": "SVRPhysicalContainers-0.2.11-beta.zip",
+  "archive_sha256": "d63ece6d6aa961759adad5db036c7fcb5388b3c2ecfd3c4c286285c7346cd931",
+  "dll_sha256": "d34cb12094872a58285259b5bed62b4471ade7cccce9b086a856d93247b492fd",
   "meshes": 41,
-  "installed_payload_identical": true,
   "PBR_in_base": false,
   "payload": {
+    "CHANGELOG.txt": "c8c0f24ac8dfda868a88a61ca1bce89f1e9cdf6891fc11fd9b4a53c93a7c8c11",
     "COPYING.txt": "f817886ee6bb65ed3098a7987b1e9781653d15c71f85589ce0d2af663c66d373",
     "CREDITS.txt": "6956e8e28a333eb2f5ed884589a3329d40462fab176f030de3492b462ebe46e1",
     "EXCEPTIONS.md": "649272d176502ce31cd1314810f4b27035bf08417b4f09c6a2971d13ea4a7aba",
+    "README.txt": "b6626c0da29b872fdcc4205263564a2dcaca0efb5ae5923b10c5cb91c334c68b",
     "meshes\\svrphysicalcontainersc23\\clutter\\barrel01.nif": "54f27b192231b1e9a809c670fd7e5b46c97c01b930d94428bf0a32fa53e27727",
     "meshes\\svrphysicalcontainersc23\\clutter\\tgbarrel01.nif": "8b91d4dbbf7f8968d5e84317bf29a70183308315bfe28831f3b343e92da2e91a",
     "meshes\\svrphysicalcontainersc23\\architecture\\winterhold\\winterholdbookcase01.nif": "26548cbfaf873b8f06b0f1fa29ad3de22838d86ddb61e7d5d19e82f4d45f1957",
@@ -49,8 +52,7 @@
     "meshes\\svrphysicalcontainersc23\\furniture\\orcfurniture\\orcdresser01.nif": "58408e1ca5c85fd77c44b83b9c4f8353385a308475b7bf5bdd688b01bdd7951a",
     "meshes\\svrphysicalcontainersc23\\furniture\\orcfurniture\\orcendtable01.nif": "206d9aae1bb4247c5ed8f27b4654a4919d7094e109eee6519a8c016eb4679a7b",
     "meshes\\svrphysicalcontainersc23\\_byoh\\furniture\\byohupperendtable02.nif": "8e7b2511865507047a841f6e52123eccee01f0fb14debfcb29a5c07c923d6063",
-    "SKSE\\Plugins\\SVRPhysicalContainers.dll": "ca36b6f4dac0104bd7036871746ff6b5948e6c1f519589671a839037b4ce9014",
+    "SKSE\\Plugins\\SVRPhysicalContainers.dll": "d34cb12094872a58285259b5bed62b4471ade7cccce9b086a856d93247b492fd",
     "textures\\svrphysicalcontainersc23\\barrel_inside.dds": "dcf6b36f16596695bf15d8dd802a9ffff4074801ac58205e91c133eccf3ddef7"
-  },
-  "known_limits": "Only the 41 supplied model profiles are supported. Loose lid placement is not persistent across cell reloads. Scripted containers and arbitrary mesh replacements may need additional support."
+  }
 }

@@ -13,7 +13,10 @@ int main(){
  assert(CloseAssistSpeed(.006f,0,false,false,true)<0); // drawer six mm from shut
  assert(CloseAssistSpeed(.007f,0,false,false,true)==0);
  assert(CloseAssistSpeed(0,0,false,false,true)==0);
- assert(OpeningTriggersInventory(.4f,.55f,.3f,.5235988f));
+ assert(OpeningTriggersInventory(.12f,.15f,.3f,HingedInventoryThreshold));
+ assert(!OpeningTriggersInventory(.0f,.02f,.3f,HingedInventoryThreshold));
+ assert(OpeningTriggersInventory(.01f,.021f,.2f,DrawerInventoryThreshold(.1f)));
+ assert(!OpeningTriggersInventory(.025f,.021f,-.2f,DrawerInventoryThreshold(.1f)));
  assert(!OpeningTriggersInventory(.8f,.7f,-.2f,.5235988f)); // closing an open chest
  assert(!OpeningTriggersInventory(.7f,.7f,0,.5235988f)); // touching an already open lid
  assert(!ClosedEnoughToRearm(.7f,false));
